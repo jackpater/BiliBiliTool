@@ -1,4 +1,4 @@
-name: 'run BiliExp'
+name: 'run BiliExp1'
 
 on:
   schedule:
@@ -23,7 +23,7 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    - name: 执行BiliExp
+    - name: 执行BiliExp1
       run: bash ./run_in_Actions/run_BiliExp.sh
       env:
           ADVCONFIG: ${{ secrets.ADVCONFIG }}
