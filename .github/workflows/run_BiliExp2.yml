@@ -26,6 +26,6 @@ jobs:
     - name: 执行BiliExp2
       run: bash ./run_in_Actions/run_BiliExp.sh
       env:
-          ADVCONFIG: ${{ secrets.ADVCONFIG }}
+          ADVCONFIG: ${{ secrets.ADVCONFIG2 }}
           BILICONFIG: ${{ secrets.BILICONFIG2 }}
           PUSH_MESSAGE: ${{ secrets.PUSH_MESSAGE }}
